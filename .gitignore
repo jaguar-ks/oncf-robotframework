@@ -1,0 +1,75 @@
+# ==========================================
+# Robot Framework Auto-Generated Files
+# ==========================================
+# These are generated every time a test runs
+log.html
+report.html
+output.xml
+xunit.xml
+debug.log
+playwright-log.txt
+
+# Automatically captured screenshots on test failures
+*.png
+*.jpg
+*.jpeg
+
+# If you output your test results to a specific directory (e.g., using -d reports/)
+/results/
+/reports/
+/logs/
+/output/
+
+# ==========================================
+# Python Specific
+# ==========================================
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# Sensitive Data / Local Configurations
+# ==========================================
+# Environment variables containing actual passwords/API keys
+.env
+.env.local
+
+# Uncomment the line below if you keep sensitive data files locally 
+# that shouldn't be pushed to the remote repository.
+# /data/secret_test_data.csv
