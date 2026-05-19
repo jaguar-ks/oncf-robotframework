@@ -1,12 +1,6 @@
 *** Settings ***
 Library          SeleniumLibrary
-
-*** Variables ***
-${USER_LOGIN_ICON}      css:[class$='user_login_icon']>a[class$='user']
-${EMAIL_INPUT}          id:SignInFormUsername
-${PASSWORD_INPUT}       id:passwordInput
-${LOGIN_BUTTON}         css:[class*='SignInForm_ctaSignIn']
-${LOGIN_POP_MESSAGE}    css:#succes, #failure
+Resource    ../Locators.resource
 
 *** Keywords ***
 Login To Account

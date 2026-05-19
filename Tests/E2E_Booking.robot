@@ -3,8 +3,8 @@ Library          SeleniumLibrary
 Resource         ../Resources/Common.resource
 Resource         ../Resources/Pages/LoginPage.resource
 Resource         ../Resources/Pages/SearchPage.resource
-Test Setup       Begin Web Test
-Test Teardown    End Web Test
+Test Setup       Open ONCF Website
+Test Teardown    Close ONCF Website
 
 *** Test Cases ***
 Book 2 Tickets

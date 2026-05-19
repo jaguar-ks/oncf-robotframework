@@ -1,11 +1,7 @@
 *** SettingS ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
+Resource    ../Locators.resource
 
-*** Variables ***
-${DEPARTURE_STATION_FIELD}    id:origin
-${ARRIVAL_STATION_FIELD}      id:destination
-${DEPARTURE_TIME}             css:[placeholder='My departure']
-${SEARCH_BUTTON}              css:#search-availability>button
 
 *** Keywords ***
 Search For Trip

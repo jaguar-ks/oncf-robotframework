@@ -6,9 +6,9 @@ ${BASE_URL}    https://www.oncf-voyages.ma/
 ${BROWSER}     chrome
 
 *** Keywords ***
-Begin Web Test
+Open ONCF Website
     Open Browser    ${BASE_URL}    ${BROWSER}
     Maximize Browser Window
 
-End Web Test
-    Close All Browsers
+Close ONCF Website
+    Close Browser
