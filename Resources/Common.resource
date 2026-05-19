@@ -21,11 +21,12 @@ String Should Exist In Web Elements
     @{checked_texts}=    Create List
     FOR    ${element}    IN    @{elements}
         ${element_text}=    Get Text    ${element}
-        Append To List    ${checked_texts}    ${element_text}
         ${match_found}=    Run Keyword And Return Status    Should Contain    ${element_text}    ${expected_string}
         IF    ${match_found}
             ${is_found}=    Set Variable    ${True}
             BREAK
+        ELSE
+            Append To List    ${checked_texts}    ${element_text}
         END
     END
     ${checked_count}=    Get Length    ${checked_texts}
