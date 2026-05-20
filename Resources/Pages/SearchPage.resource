@@ -13,4 +13,5 @@ Search For Trip
     Input Text                       ${ARRIVAL_STATION_FIELD}    ${Arrival}
     Click Element                    css:[title='${Arrival}']
     Click Element                    ${SEARCH_BUTTON}
+    Element Should Be Visible        ${TICKET_LIST}
     # Pause Execution                  Check the page state, then click OK to continue.
