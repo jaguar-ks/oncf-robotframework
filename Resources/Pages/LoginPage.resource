@@ -12,3 +12,5 @@ Login To Account
     Input Text                       ${EMAIL_INPUT}    ${email}
     Input Text                       ${PASSWORD_INPUT}    ${password}
     Click Element                    ${LOGIN_BUTTON}
+    Wait Until Element Is Visible    ${LOGIN_POP_MESSAGE}
+    Element Text Should Be           ${LOGIN_POP_MESSAGE}    Successfully logged in
