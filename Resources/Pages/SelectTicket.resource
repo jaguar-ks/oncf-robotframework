@@ -15,6 +15,3 @@ Select Ticket
     Scroll Element Into View         ${SELECT_PRICE_BUTTON}
     Click Element                    ${SELECT_PRICE_BUTTON}
     Click Element                    ${ADD_TO_CART_BUTTON}
-    Sleep    20s
-    
-    
