@@ -1,4 +1,4 @@
-*** Test Cases ***,${USER_EMAIL},${USER_PASS},${DEPARTURE_STATION},${ARRIVAL_STATION},${DEPARTURE_TIME}
-Book Trip Casablanca to Rabat,cigib67333@kobace.com,0NcF$1234,CASA PORT,RABAT AGDAL,13:05
-Book Trip Casablanca to Marrakech,cigib67333@kobace.com,0NcF$1234,CASA VOYAGEURS,MARRAKECH,14:44
-Book Trip Kenitra to Tanger,cigib67333@kobace.com,0NcF$1234,KENITRA,TANGER VILLE,14:35
+*** Test Cases ***,${USER_EMAIL},${USER_PASS},${FNAME},${LNAME},${DEPARTURE_STATION},${ARRIVAL_STATION},${DEPARTURE_TIME}
+Book Trip Casablanca to Rabat,cigib67333@kobace.com,0NcF$1234,Ahmed,Mimoun,CASA PORT,RABAT AGDAL,20:05
+Book Trip Casablanca to Marrakech,cigib67333@kobace.com,0NcF$1234,Ahmed,Mimoun,CASA VOYAGEURS,MARRAKECH,20:44
+Book Trip Kenitra to Tanger,cigib67333@kobace.com,0NcF$1234,Ahmed,Mimoun,KENITRA,TANGER VILLE,20:29
