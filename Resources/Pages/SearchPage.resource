@@ -1,4 +1,4 @@
-*** SettingS ***
+*** Settings ***
 Library     SeleniumLibrary
 Resource    ../Locators.resource
 
@@ -13,5 +13,4 @@ Search For Trip
     Input Text                       ${ARRIVAL_STATION_FIELD}    ${Arrival}
     Click Element                    css:[title='${Arrival}']
     Click Element                    ${SEARCH_BUTTON}
-    Sleep                            20s
     # Pause Execution                  Check the page state, then click OK to continue.

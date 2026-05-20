@@ -13,4 +13,6 @@ ${LOGIN_BUTTON}         css:[class*='SignInForm_ctaSignIn']
 ${LOGIN_POP_MESSAGE}    css:#succes, #failure
 
 # ---------------[Choose Locators]---------------
-${BOOK_BUTTON}    xpath://div/label[contains(@title,'06:15')]/ancestor::div[contains(@class,'trips-wrapper')]//button
+# ${BOOK_BUTTON}    xpath://div/label[contains(@title,'06:15')]/ancestor::div[contains(@class,'trips-wrapper')]//button
+${SELECT_PRICE_BUTTON}    id:select-rate
+${ADD_TO_CART_BUTTON}     id:add-to-cart
