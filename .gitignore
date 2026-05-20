@@ -11,7 +11,7 @@ playwright-log.txt
 
 # Pabot artifacts
 .pabotsuitenames
-/pabot_results/
+pabot_results/
 
 # Automatically captured screenshots on test failures
 *.png
