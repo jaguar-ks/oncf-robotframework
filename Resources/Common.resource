@@ -11,7 +11,7 @@ ${BROWSER}     chrome
 *** Keywords ***
 Open ONCF Website
     [Documentation]    Open the ONCF booking website in the configured browser.
-    Open Browser                    ${BASE_URL}    ${BROWSER}    options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage");add_argument("--disable-gpu")
+    Open Browser                    ${BASE_URL}    ${BROWSER}    options=add_argument("--headless");
     Maximize Browser Window
     Set Selenium Implicit Wait      8s
     Run Keyword And Ignore Error    Click Element    id:close-install-app
