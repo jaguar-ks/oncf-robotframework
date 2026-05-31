@@ -1,6 +1,8 @@
 *** Settings ***
+Documentation    Search page keywords for finding available trips.
 Library     SeleniumLibrary
 Resource    ../Locators.resource
+
 
 
 *** Keywords ***
@@ -15,3 +17,4 @@ Search For Trip
     Click Element                    ${SEARCH_BUTTON}
     Element Should Be Visible        ${TICKET_LIST}
     # Pause Execution                  Check the page state, then click OK to continue.
+

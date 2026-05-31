@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    End-to-end booking suite driven by the testing data CSV.
 Library          SeleniumLibrary
 Library          DataDriver    file=../Data/TestingData.csv    dialect=excel
 Resource         ../Resources/Common.resource
@@ -9,6 +10,7 @@ Resource         ../Resources/Pages/SelectTicket.resource
 Test Setup       Open ONCF Website
 Test Teardown    Close ONCF Website
 Test Template    Book Ticket Workflow
+
 
 *** Test Cases ***
 Book A Ticket From ${DEPARTURE_STATION} TO ${ARRIVAL_STATION}
@@ -21,4 +23,3 @@ Book Ticket Workflow
     Search For Trip     ${DEPARTURE_STATION}    ${ARRIVAL_STATION}
     Select Ticket       ${DEPARTURE_TIME}
     Checkout Cart       ${FNAME}    ${LNAME}
-

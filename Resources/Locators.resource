@@ -1,3 +1,6 @@
+*** Settings ***
+Documentation    Shared locators for the ONCF booking flow.
+
 *** Variables ***
 # ---------------[Search Locators]---------------
 ${DEPARTURE_STATION_FIELD}    id:origin

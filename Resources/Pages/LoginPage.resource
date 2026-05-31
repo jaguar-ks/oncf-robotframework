@@ -1,6 +1,8 @@
 *** Settings ***
+Documentation    Login page keywords for the ONCF booking flow.
 Library          SeleniumLibrary
 Resource    ../Locators.resource
+
 
 *** Keywords ***
 Login To Account
