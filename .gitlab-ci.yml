@@ -27,6 +27,9 @@ lint:
 test:
   extends: .install_requirements
   stage: test
+  before_script:
+    - apt-get update
+    - apt-get install -y --no-install-recommends chromium chromium-driver
   script:
     - pabot --testlevelsplit --outputdir Results --xunit xunit.xml Tests/E2E_Booking.robot
   artifacts:
