@@ -17,6 +17,7 @@ cache:
   before_script:
     - python -m pip install --upgrade pip
     - python -m pip install -r requirements.txt
+    - apk add --no-cache chromium chromium-chromedriver
 
 lint:
   extends: .install_requirements
@@ -26,8 +27,6 @@ lint:
 
 test:
   stage: test
-  before_script:
-    - apk add --no-cache chromium chromium-chromedriver
   script:
     - pabot --testlevelsplit --outputdir Results --xunit xunit.xml Tests/E2E_Booking.robot
   artifacts:
