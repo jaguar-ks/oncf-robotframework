@@ -1,3 +1,5 @@
+image: python:3.12-alpine
+
 stages:
   - lint
   - test
@@ -17,19 +19,15 @@ cache:
     - python -m pip install -r requirements.txt
 
 lint:
-  image: python:3.12-alpine
   extends: .install_requirements
   stage: lint
   script:
     - robot --dryrun --outputdir Results/dryrun Tests/E2E_Booking.robot
 
 test:
-  image: ppodgorsek/robot-framework:latest
   stage: test
   before_script:
-    - export HOME="$CI_PROJECT_DIR/.home"
-    - mkdir -p "$HOME/.cache"
-    - export XDG_CACHE_HOME="$HOME/.cache"
+    - apk add --no-cache chromium chromium-chromedriver
   script:
     - pabot --testlevelsplit --outputdir Results --xunit xunit.xml Tests/E2E_Booking.robot
   artifacts:
