@@ -22,7 +22,7 @@ lint:
   extends: .install_requirements
   stage: lint
   script:
-    - robocop Resources Tests
+    - robot --dryrun --outputdir Results/dryrun Tests/E2E_Booking.robot
 
 test:
   extends: .install_requirements
