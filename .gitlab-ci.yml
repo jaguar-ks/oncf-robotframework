@@ -26,6 +26,9 @@ lint:
 test:
   image: ppodgorsek/robot-framework:latest
   stage: test
+  variables:
+    HOME: "$CI_PROJECT_DIR"
+    XDG_CACHE_HOME: "$CI_PROJECT_DIR/.cache"
   script:
     - pabot --testlevelsplit --outputdir Results --xunit xunit.xml Tests/E2E_Booking.robot
   artifacts:
