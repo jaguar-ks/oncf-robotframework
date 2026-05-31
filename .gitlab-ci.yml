@@ -26,6 +26,7 @@ lint:
     - robot --dryrun --outputdir Results/dryrun Tests/E2E_Booking.robot
 
 test:
+  extends: .install_requirements
   stage: test
   script:
     - pabot --testlevelsplit --outputdir Results --xunit xunit.xml Tests/E2E_Booking.robot
